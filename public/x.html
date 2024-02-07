@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        strong {
+            color: #007BFF;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>New User Registration</h2>
+
+    <p><strong>Email:</strong> <%= req.body.email %></p>
+    <p><strong>Name:</strong> <%= req.body.name %></p>
+    <p><strong>Sex:</strong> <%= req.body.sex %></p>
+    <p><strong>Age:</strong> <%= req.body.age %></p>
+    <p><strong>Phone:</strong> <%= req.body.phone %></p>
+    <p><strong>Address:</strong> <%= req.body.addr %></p>
+
+    <p>Thank you for registering a new user. Please review the details above and take any necessary actions.</p>
+
+    <div class="footer">
+        <p>Best regards,<br>
+            Your Company/Admin Name</p>
+    </div>
+</div>
+
+</body>
+</html>

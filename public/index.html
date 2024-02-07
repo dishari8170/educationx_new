@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="http://localhost:8888">
+    <meta http-equiv="Access-Control-Allow-Credentials" content="true">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Example</title>
+</head>
+<body>
+
+<h1>WebSocket Example</h1>
+<input type="text" id="messageInput" placeholder="Type a message">
+<button onclick="sendMessage()">Send Message</button>
+<ul id="messages"></ul>
+
+<script>
+    const socket = new WebSocket("ws://localhost:8888/websocket");
+
+    socket.onopen = function (event) {
+        console.log("WebSocket opened");
+    };
+
+    socket.onmessage = function (event) {
+        const messagesElement = document.getElementById("messages");
+        const messageElement = document.createElement("li");
+        messageElement.textContent = event.data;
+        messagesElement.appendChild(messageElement);
+    };
+
+    socket.onclose = function (event) {
+        console.log("WebSocket closed");
+    };
+
+    function sendMessage() {
+        const messageInput = document.getElementById("messageInput");
+        const message = messageInput.value;
+        socket.send(message);
+        messageInput.value = "";
+    }
+</script>
+</body>
+</html>

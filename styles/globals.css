@@ -1,0 +1,109 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+}
+
+
+
+
+.sidebar{
+
+
+    transition: ease-in-out 0.3s ;
+    width: 300px;
+
+}
+
+
+.sidebar .show{
+    transition: ease-in-out 0.2s ;
+    width: 0px;
+}
+
+
+
+
+
+
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+btn:active{
+    background-color: aqua;
+}
+
+
+
+
+body{
+background-color: #000000;
+}
+.bg-warning{
+
+    background-color: aqua;
+
+}
+rgxz .carousel-indicators{
+
+padding-right: 60%;
+
+
+}
+
+.paypal-button-container {
+    background-color: #007bff; /* BS5 primary button color */
+    color: #fff; /* Text color for the button */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.bg-info{
+
+background: linear-gradient(to right, #f7a21a, #e4b845)
+
+}
+
+.btn-primary{
+    color: white;
+
+    background-color: #f7a21a;
+}
+
+
+.sticky-bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #f8f9fa; /* Optional: Set a background color */
+    border: 1px solid #dee2e6; /* Optional: Set a border */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+body{
+    color: white;
+}
