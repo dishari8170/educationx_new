@@ -78,25 +78,10 @@ const rxd=useRef("");
                 />
 
 <div className="row mt-2">
-    <div className="col-12 col-lg-6">
+    <div className="col-12 ">
 
         <img src={rtx.cdn+"/"+dpx} className="img-fluid" alt=""/>
         {dpx?<div className="btn btn-primary w-100 my-3 d-none d-lg-block" onClick={o=>{
-
-
-            axios.post("/api/admin/ach",{dp:dpx,text:rxd.current}).then(value => {
-
-                window.location.reload();
-
-            })
-
-        }}> Submit</div>:""}
-    </div>
-    <div className={`col-12 ${dpx?"col-lg-6":""}`}>
-
-        {Editor? <Editor form={setvalueofdes} value={ed } ></Editor>:""}
-
-        {dpx?<div className="btn btn-primary w-100 my-3 d-lg-none" onClick={o=>{
 
 
             axios.post("/api/admin/ach",{dp:dpx,text:rxd.current}).then(value => {

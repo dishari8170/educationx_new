@@ -158,8 +158,8 @@ const [editX,seteditX]=useState({})
                         <Field className="form-control" type="text" name="price" id="price" placeholder={"Price..."}/>
                         <p className="fw-bold mt-2">Item INFO</p>
                         <Field className="form-control" type="text" name="bnr" id="bnr" placeholder={"short Des..."}/>
-{/*<p className="fw-bold mt-2">Item Video</p>*/}
-{/*                        <Field className="form-control" type="text" name="vdo" id="vdo" placeholder={"https://www.youtube.com/watch?v=aqz-KE-bpKQ"}/>*/}
+<p className="fw-bold mt-2">Item Video</p>
+                        <Field className="form-control" type="text" name="vdo" id="vdo" placeholder={"https://www.youtube.com/watch?v=aqz-KE-bpKQ"}/>
 
                         <p className="fw-bold mt-2 ">Item Description</p>
                         {/*<Field type="hidden" className="form-control my-2" as="textarea" name="dis" id="dis" placeholder={"short Des..."}/>*/}

@@ -5,7 +5,7 @@ import React, {useEffect, useRef, useState} from "react";
 import axios from "axios";
 import dynamic from "next/dynamic";
 import Swal from "sweetalert2";
-import {FaArrowDown, FaPencil} from "react-icons/fa6";
+import {FaArrowDown, FaFacebook, FaInstagram, FaPencil, FaTwitter} from "react-icons/fa6";
 import UploadX from "@/components/UploadX";
 import {rtx} from "@/lib/Rh";
 
@@ -279,15 +279,30 @@ export default (xxx) => {
                                         </Card.Body>
                                     </Card>
                                 </div>
+
                             </Collapse>
+
                         </div>
 
 
                     })}
+                    <div className="row justify-content-center text-center mt-5 ">
 
 
+<div className="col-lg-3 col-12">
+                            <FaFacebook className="display-5  "/>
+    <input name="" className="form-control mt-2"/></div>
+                        <div className="col-lg-3 py-2 p-lg-0 col-12"> <FaInstagram className="display-5"/>
+                            <input name="" className="form-control  mt-2"/></div>
+                          <div className="col-lg-3  col-12">  <FaTwitter className="display-5"/>
+                              <input name="" className="form-control mt-2"/></div>
+
+
+                    </div>
+                    <div className="row align-items-center justify-content-center">
+                    <div className="btn col-4 text-center  mt-3 btn-primary">Update</div>
+                    </div>
                 </div>
-
 
             </div>
 

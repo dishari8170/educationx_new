@@ -42,6 +42,11 @@ About Us</h6>
                     <div className="col-6">
                         <h6
                             onClick={()=>{
+                                window.location.href="/teacher"
+                            }} style={{cursor:"pointer"}}
+                        >Teacher Login</h6>
+                        <h6
+                            onClick={()=>{
                                 window.location.href="/term"
                             }} style={{cursor:"pointer"}}
                         >Terms & Condition</h6>
@@ -55,6 +60,7 @@ About Us</h6>
                                 window.location.href="/Faq"
                             }} style={{cursor:"pointer"}}
                         >FAQ</h6>
+
 
 
 

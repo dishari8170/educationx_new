@@ -355,18 +355,24 @@ export default function Id(pro) {
 
                 {/*    </div>*/}
                 {/*</div>*/}
+<div className=" col-12 bg-success">
+                <div className="d-flex justify-content-center">
 
+                    <iframe height="490" width={600} src={"https://www.youtube.com/embed/"+xdat.vdo+"?autoplay=1&mute=1"} frameBorder="0" allowFullScreen
 
+                            className="d-block mx-auto me-5 mt-5 "
+                    ></iframe></div>
+                </div>
                 <div className="col-10 mt-5 my-5 py-5 text-center">
                     <div dangerouslySetInnerHTML={{__html:xdat.dis}}>
 
 
-
+</div>
 
                     </div>
 
 
-                </div>
+
 
 
                 {/*    <div className="d-flex align-items-center  justify-content-center p-5 ">*/}
